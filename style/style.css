@@ -1,0 +1,320 @@
+/* Header */
+header {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .navbar-brand i {
+    color: rgb(54, 162, 45);
+    font-size: 2.5rem;
+}
+
+header .navbar-brand span {
+    font-size: 2rem;
+    color: white;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: white !important;
+}
+
+header ul li.active a {
+    color: rgb(54, 162, 45) !important;
+}
+
+header ul li:hover a {
+    color: rgb(54, 162, 45) !important;
+}
+
+header ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #35a22c;
+    display: block;
+    transition: all 0.5s;
+}
+
+header ul li.active::after {
+    width: 100%;
+}
+
+header ul li:hover::after {
+    width: 100%;
+}
+
+/* Carousel */
+
+.carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url("../image/finland.jpg");
+
+}
+
+
+.carousel-item:nth-child(2) {
+    background-image: url("../image/mountains.jpg");
+}
+
+
+.carousel-item:nth-child(3) {
+    background-image: url("../image/mountains-1.jpg");
+}
+
+#demo .overlay {
+    background: rgba(39,43,54,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#demo h3 {
+    font-size: 4rem;
+}
+
+#demo p {
+    font-size: 1.5rem;
+}
+
+.img__thumb {
+    width: 150px;
+    margin: auto;
+}
+
+.img__thumb img {
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    /* đi cùng vs position */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    border: none;
+    width: 14px;
+    height: 14px;
+}
+
+.carousel-indicators li.active {
+    background-color: #35a22c;
+}
+
+
+/* Project */
+
+#project .card {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.049);
+    transition: all 0.5s;
+}
+
+#project .card:hover {
+    border: 1px #35a22c;
+}
+
+#project .title h1 {
+    padding-bottom: 1rem;
+}
+
+.nav-pills .nav-link {
+    color: #1a1d2d;
+    border: 1px solid#1a1d2d;
+    margin: 0 5px;
+    border-radius: 0.5rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #35a22c;
+    color: #fff;
+    border-color: #35a22c;
+}
+
+.card:hover h4 {
+    color: #35a22c;
+}
+
+
+
+/* Service */
+
+#service {
+    background-image: url("../image/3.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* #service .overlay {
+    background: rgba(7,10,12,.72);
+} */
+
+#service .title {
+    padding: 35px;
+    font-weight: 600;
+}
+
+
+#service .card {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    backdrop-filter: blur (3px);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+
+#service .card .card-body i {
+    color: #35a22c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#service .card:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+#service .card-body i {
+    font-size: 3rem;
+    color: #35a22c;
+}
+
+#service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 10, 12, .72);
+}
+
+#service .card-body h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 30px;
+    padding-top: 25px;
+    font-weight: 700;
+}
+
+#service .card .card-body h4 {
+    font-weight: 700;
+}
+
+#service .title {
+    position: relative;
+
+}
+
+/* Edu */
+#edu{
+    padding: 70px 0;
+    position: relative;
+}
+
+.bg__edu {
+    background-image: url("../image/memphis_3.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 58% auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#edu .img__edu {
+    width: 125%;
+}
+
+#edu .card {
+    border-radius: 15px;
+    padding: 45px;
+    backdrop-filter: blur(3px);
+    background: rgba(255,255,255,.25);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    border: 1px solid rgba(255,255,255,.18);
+}
+
+#edu  h2 {
+    font-size: 1.7rem;
+    color: #1a1d2d;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+#edu .edu__right {
+    padding: 45px 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: black
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    color: #fff;
+    margin: 0;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #35a22c;
+}
+
+.footer__main i {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    transition: all 0.5s;
+}
+
+.footer__main a {
+    margin-right: 10px
+}
+
+.footer__main a:last-child {
+    margin-right: 0
+}
+
+.footer__coppy {
+    border-top: 1px solid #454545;
+    padding-top: 30px;
+    margin-top: 30px
+}
+
+.footer__main i:hover {
+    border-color: #35a22c
+}
