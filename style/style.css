@@ -168,9 +168,6 @@ header ul li:hover::after {
     position: relative;
 }
 
-/* #service .overlay {
-    background: rgba(7,10,12,.72);
-} */
 
 #service .title {
     padding: 35px;
