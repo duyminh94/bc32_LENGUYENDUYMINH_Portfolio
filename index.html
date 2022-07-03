@@ -8,9 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Font awesome  -->
@@ -22,10 +20,10 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
-<body>
+<body>  
     <!-- Header -->
     <header class="container">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md navbar-dark ">
             <!-- Brand -->
             <a class="navbar-brand" href="#">
                 <i class="fa-solid fa-dice-d20"></i>
@@ -76,7 +74,8 @@
                             <img class="img-fluid animate__animated animate__fadeInUp" src="./image/01-3.jpg" alt="">
                         </div>
                         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.</h3>
-                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to grow.</p>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to
+                            grow.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -86,7 +85,8 @@
                             <img class="img-fluid animate__animated animate__fadeInUp" src="./image/02-3.jpg" alt="">
                         </div>
                         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.</h3>
-                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to grow.</p>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to
+                            grow.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -96,7 +96,8 @@
                             <img class="img-fluid animate__animated animate__fadeInUp" src="./image/03-3.jpg" alt="">
                         </div>
                         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.</h3>
-                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to grow.</p>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to
+                            grow.</p>
                     </div>
                 </div>
             </div>
@@ -162,7 +163,6 @@
                                 <img class="card-img-top" src="./image/g4.jpg" alt="">
                                 <div class="card-body">
                                     <h4 class="card-title">Oil bottle branding</h4>
-                                    <br />
                                     <p class="card-text">Branding</p>
                                 </div>
                             </div>
@@ -292,7 +292,7 @@
 
         <div class="service__content container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5 mb-md-0">
                     <div class="card">
                         <div class="card-body">
                             <i class="fa-solid fa-paintbrush"></i>
@@ -302,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5 mb-md-0">
                     <div class="card">
                         <div class="card-body">
                             <i class="fa-solid fa-shekel-sign"></i>
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 ">
                     <div class="card">
                         <div class="card-body">
                             <i class="fa-solid fa-camera"></i>
@@ -329,43 +329,37 @@
     <!-- Edu -->
     <section id="edu">
         <div class="bg__edu"></div>
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
-                <div class="col-md-4 ">
-                    <div class="card ">
-                        <div class="edu__left ">
-                            <div class="card-body">
-                                <h2 class="card-title">Our Achievement and Award</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                                    tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                            </div>
-                        </div>
+                <div class="col-12 col-md-6 col-lg-5 mx-0">
+                    <div class="edu__left">
+                        <h2>Our Achievement and Award</h2>
+                        <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                            nec ullamcorper mattis, pulvinar dapibus leo.</p>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-12 col-md-6 col-lg-7">
                     <div class="edu__right">
                         <p>Luctus porta semper aptent morbi. Vestibulum lectus tempus augue dictumst enim commodo
-                            facilisis.
-                            Mus laoreet scelerisque habitant urna dui sem diam. Purus dis nam eget. Scelerisque placerat
-                            lectus lorem etiam. Elementum integer phasellus lectus.
-                        </p>
-                        <div class="row img__edu">
-                            <div class="col-2">
+                            facilisis. Mus laoreet scelerisque habitant urna dui sem diam. Purus dis nam eget.
+                            Scelerisque placerat lectus lorem etiam. Elementum integer phasellus lectus.</p>
+                            <!-- Tip để làm 5 cột trong bs 4.6 trở lên -->
+                        <div class="row row-cols-5 img__edu">
+                            <div class="col">
                                 <img class="img-fluid" src="./image/award-1.png" alt="" />
                             </div>
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="img-fluid" src="./image/award-2.png" alt="" />
                             </div>
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="img-fluid" src="./image/award-3.png" alt="" />
                             </div>
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="img-fluid" src="./image/award-4.png" alt="" />
                             </div>
-                            <div class="col-2">
+                            <div class="col">
                                 <img class="img-fluid" src="./image/award-5.png" alt="" />
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -390,17 +384,9 @@
         </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 
 
